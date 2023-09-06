@@ -24,10 +24,8 @@ func handler(w http.ResponseWriter, _ *http.Request) {
 		return
 	}
 
-	// レスポンスヘッダーの設定
 	w.Header().Set("Content-Type", "application/json")
 
-	// ステータスコードを設定
 	w.WriteHeader(http.StatusOK)
 
 	w.Write(jsonData)
